@@ -13,11 +13,14 @@
 
   }
 
+
+  /* ============================== initial settings ========= */
   *{
       margin: 0;
       padding: 0;
       box-sizing: border-box;
   }
+
 
   html{
       background-color: var(--third-color);
@@ -39,20 +42,7 @@
       margin: 0 auto;
       
   }
-
-  header{
-      background-image:linear-gradient(#002f49b0, rgba(0, 0, 0, 0.65)), url(img/n-bgjpg.jpg);
-      height: 100vh;
-      background-size: cover;
-      background-position: center;
-  }
-  .hero-text-box{
-      position: absolute;
-      width: 1140px;
-      top:50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
+/* ============================== html basic element ========= */
   h1{
       color: var(--third-color);
       font-size: 250%;
@@ -64,7 +54,25 @@
       word-spacing: 3px;
       
   }
+  /* ============================== header settings ========= */
 
+  header{
+      background-image:linear-gradient(#002f49b0, rgba(0, 0, 0, 0.65)), url(img/n-bgjpg.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+  }
+
+  /* ============================== changing background darker ========= */
+  .hero-text-box{
+      position: absolute;
+      width: 1140px;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+    /* ============================== buttons settings ========= */
   .btn:link, 
   .btn:visited{
       display: inline-block;
@@ -96,3 +104,41 @@
       color: var(--third-color);
 
   }
+
+  .logo{
+      width: 80px;
+      height: 80px;
+      background-color:var(--second-color);
+      border-radius: 100%;
+      float: left;
+      margin: 20px 40px;
+      border: 2px solid var(--third-color);
+  }
+  .main-nav{
+      float: right;
+
+  }
+  .main-nav li{
+      display: inline-block;
+      margin: 40px;
+      
+  }
+  .main-nav li a:link, 
+  .main-nav li a:visited {
+      text-transform: capitalize;
+      text-transform: uppercase;
+      font-size: 90%;
+      padding: 10px 20px;
+      border-bottom: 2px solid var(--seventh-color);
+      border-top: 2px solid transparent;
+      border-radius: 10px;
+      transition: border 0.4s, color 0.5s;
+      
+    }
+    
+    .main-nav li a:hover, 
+    .main-nav li a:active{
+        border-bottom: 2px solid var(--third-color);
+        border-top: 2px solid var(--seventh-color);
+        color: var(--ninth-color);
+    } 
