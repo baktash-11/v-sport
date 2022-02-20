@@ -1,0 +1,98 @@
+:root {
+    --first-color: #2B2D42;
+    --second-color: #8D99AE;
+    --third-color:#EDF2F4;
+    --forth-color: #EF233C;
+    --fifth-color:#D90429;
+    --sixth-color:#780000;
+    --sixth-darker-color: #450000;
+    --seventh-color:#003049;
+    --eight-color:#669BBC;
+    --ninth-color:#ffc300;
+    --tenth-color:#E57A44;
+
+  }
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  html{
+      background-color: var(--third-color);
+      color: var(--first-color);
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      /* text-rendering: optimizeLegibility; */
+  }
+  a{
+      text-decoration: none;
+      color:var(--third-color);
+  }
+  li{
+      list-style: none;
+  }
+  .row{
+      max-width: 1140 ;
+      margin: 0 auto;
+      
+  }
+
+  header{
+      background-image:linear-gradient(#002f49b0, rgba(0, 0, 0, 0.65)), url(img/n-bgjpg.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+  }
+  .hero-text-box{
+      position: absolute;
+      width: 1140px;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  h1{
+      color: var(--third-color);
+      font-size: 250%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      word-spacing: 3px;
+      
+  }
+
+  .btn:link, 
+  .btn:visited{
+      display: inline-block;
+      padding: 10px 30px;
+      font-weight: 300;
+      border-radius: 100px;
+      text-align: center;
+      margin: 10px;
+      transition: background-color 0.4s, border 0.4s, color 0.4s;
+  }
+  
+  .btn-full:link,
+  .btn-full:visited{
+      background-color: var(--sixth-color);
+      border: 2px solid var(--sixth-color);
+      color: var(--third-color);
+      
+  }
+  .btn-invisible:link, 
+  .btn-invisible:visited{
+      border: 2px solid var(--sixth-color);
+      color: var(--third-color);
+  }
+
+  .btn:hover, 
+  .btn:active{
+      background-color: var(--sixth-darker-color);
+      border: 2px solid var(--sixth-darker-color);
+      color: var(--third-color);
+
+  }
